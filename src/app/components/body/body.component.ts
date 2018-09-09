@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
+
 
 @Component({
   selector: 'app-body',
@@ -9,11 +11,14 @@ export class BodyComponent implements OnInit {
 
   private inputText:string;
 
-  constructor() { }
+  constructor() { 
+    
+    this.inputText='';
+  }
 
   ngOnInit() {
 
-    this.inputText='';
+    
   }
 
   private addTodo() : void{
