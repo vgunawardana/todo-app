@@ -11,7 +11,7 @@ export class BodyComponent implements OnInit {
 
   private inputText:string;
 
-  constructor() { 
+  constructor(private dataservice:DataService) { 
     
     this.inputText='';
   }
@@ -22,8 +22,8 @@ export class BodyComponent implements OnInit {
   }
 
   private addTodo() : void{
-
-    console.log("todo input :",this.inputText);
+    this.dataservice.addTodo(this.inputText);
+    //console.log("todo input :",this.inputText);
     this.inputText='';
   }
 

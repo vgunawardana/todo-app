@@ -2,6 +2,11 @@
   <div class="todo-wrapper">
     <app-header></app-header>
     <app-body></app-body>
+    <div *ngFor="let todo of dataservice.getTodos()">
+        <app-items [item]="todo"></app-items>
+        
+    </div>
+    
   </div>
 </div>
 

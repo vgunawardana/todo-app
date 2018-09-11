@@ -7,12 +7,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 
 import { DataService } from './services/data.service';
+import { ItemsComponent } from './components/items/items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BodyComponent
+    BodyComponent,
+    ItemsComponent
   ],
   imports: [
     BrowserModule,

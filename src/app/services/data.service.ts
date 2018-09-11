@@ -25,6 +25,7 @@ export class DataService {
     let newTodo = new Todo(this.nextId,text);
     this.todos.push(newTodo);
     this.nextId++;
+    console.log(this.todos);
 
   }
 
